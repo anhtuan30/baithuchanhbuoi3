@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Chi tiết sản phẩm"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+        <!-- Thông tin sản phẩm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- Tên sản phẩm -->
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                 />
+
+            <!-- Loại sản phẩm -->
+            <TextView
+                android:id="@+id/tvDetailCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loại: Điện tử"
+                android:textSize="14sp"
+
+                android:layout_marginTop="8dp" />
+
+            <!-- Giá bán -->
+            <TextView
+                android:id="@+id/tvDetailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá bán: 450.000 đ"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:layout_marginTop="20dp" />
+
+            <!-- Số lượng -->
+            <TextView
+                android:id="@+id/tvDetailQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số lượng tồn: 3"
+                android:textSize="16sp"
+                android:textColor="#444444"
+                android:layout_marginTop="12dp" />
+
+            <!-- Giá trị tồn kho -->
+            <TextView
+                android:id="@+id/tvDetailValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá trị tồn kho: 1.350.000 đ"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <!-- Cảnh báo -->
+            <TextView
+                android:id="@+id/tvDetailWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sắp hết hàng!"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#D32F2F"
+                android:layout_marginTop="12dp"
+                android:visibility="gone" />
+
+            <!-- Mô tả -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp" />
+
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả sản phẩm..."
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Nút nhập thêm -->
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="+ Nhập thêm 1"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Nút bán -->
+        <Button
+            android:id="@+id/btnSell"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="- Bán 1"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Nút quay lại -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Quay lại"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Nút xóa -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Xóa sản phẩm"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

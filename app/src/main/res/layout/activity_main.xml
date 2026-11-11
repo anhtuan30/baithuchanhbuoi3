@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA"
+    android:padding="16dp">
+
+  <!-- Tiêu đề -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:gravity="center_vertical"
+      android:text="Kho hàng của tôi"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:paddingStart="16dp" />
+
+  <!-- Khối thống kê -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="115dp"
+      android:orientation="vertical"
+      android:padding="12dp"
+      android:layout_marginTop="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thống kê kho"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+      <!-- Tổng sản phẩm -->
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTotalProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm"
+            android:textSize="12sp" />
+      </LinearLayout>
+
+      <!-- Giá trị kho -->
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1.5"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 đ"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá trị kho"
+            android:textSize="12sp" />
+      </LinearLayout>
+
+      <!-- Sắp hết hàng -->
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLowStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sắp hết hàng"
+            android:textSize="12sp" />
+      </LinearLayout>
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <!-- Tiêu đề danh sách -->
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:gravity="center_vertical"
+      android:text="Danh sách sản phẩm"
+      android:textSize="17sp"
+      android:textStyle="bold"
+      android:textColor="#222222" />
+
+  <!-- Danh sách sản phẩm -->
+  <ListView
+      android:id="@+id/lvProducts"
+      android:layout_width="380dp"
+      android:layout_height="418dp"
+      android:layout_weight="1"
+      android:background="@android:color/transparent"
+      android:clipToPadding="false"
+      android:divider="@android:color/transparent"
+      android:dividerHeight="8dp"
+      android:paddingBottom="8dp" />
+
+  <!-- Nút thêm sản phẩm -->
+  <Button
+      android:id="@+id/btnAddProduct"
+      android:layout_width="match_parent"
+      android:layout_height="55dp"
+      android:text="+ Thêm sản phẩm"
+      android:textSize="16sp"
+      />
+
+</LinearLayout>
